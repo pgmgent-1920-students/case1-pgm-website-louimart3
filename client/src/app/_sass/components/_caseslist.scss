@@ -1,0 +1,23 @@
+.cases-list {
+  & > div {
+    margin-bottom: $grid-gutter-width;
+
+    &[data-visible='false'] {
+      display: none;
+    }
+  }
+
+  &__item {
+    & .picture {
+      & > img {
+        transition: all 286ms ease-in-out 0s;        
+      }
+
+      &:hover {
+        & > img {
+          transform: scale(1.4);
+        }
+      }
+    }
+  }
+}

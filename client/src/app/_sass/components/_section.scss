@@ -1,0 +1,32 @@
+.section {
+  margin: 0 0 $grid-gutter-width*2;
+
+  &__title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0 0.32em;
+
+    & mark {
+      background: transparent;
+      color: $color-blue;
+    }
+  }
+
+  &__intro {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.42;
+
+    & strong {
+      background: transparent;
+      color: $color-blue;
+    }
+  }
+
+  @include generateSectionColor('purple', $color-purple);
+  @include generateSectionColor('blue', $color-blue);
+  @include generateSectionColor('green', $color-green);
+  @include generateSectionColor('red', $color-red);
+  @include generateSectionColor('orange', $color-orange);
+}
