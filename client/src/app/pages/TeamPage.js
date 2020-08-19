@@ -1,8 +1,3 @@
-
-import {
-  PersonsList
-} from '../components';
-
 import { BAAS } from '../services';
 
 class TeamPage {
