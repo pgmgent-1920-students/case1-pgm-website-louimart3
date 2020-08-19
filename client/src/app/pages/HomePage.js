@@ -2,14 +2,25 @@ import {
   routes
 } from '../router';
 
-import {
-  PostsList
-} from '../components';
+import { BAAS } from '../services';
+
 
 class HomePage {
-  constructor() {
-    this.compPostsList = new PostsList(3);
-  }
+
+  async getDataCases() {
+    const data = await BAAS.getCases();
+    return data.map(cases => `
+      <div class="col-sm-6 col-12">
+        <div class="single-content">
+          <img class="" src="${cases.image}" >
+          <div class="text-content">
+            <h3>${cases.title}</h3>
+            <p>meer tekst hieer</p>
+          </div> 
+        </div>
+      </div>
+    `).join('');
+  };
 
   async render() {
     return `
@@ -125,7 +136,6 @@ class HomePage {
 
   async afterRender() {
     // afterRender all components on the page
-    this.compPostsList.afterRender();
 
     // Connect the listeners
     return this;

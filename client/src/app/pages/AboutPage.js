@@ -1,3 +1,5 @@
+import { routes } from '../router';
+
 class AboutPage {
   constructor () {
   }
@@ -20,25 +22,34 @@ class AboutPage {
         </div>
         <div class="container">
           <div class="row">
-          <div class="col-sm-6 col-12">
-          <div class="single-content">
-            <img class="" src="https://i.pinimg.com/originals/fb/1f/8a/fb1f8af3676977124d8844c0614b5afe.jpg" >
-            <div class="text-content">
-              <p>tekst hier</p>
-              <p>meer tekst hieer</p>
-            </div> 
-          </div>
-        </div>
-        <div class="col-sm-6 col-12">
-              <div class="single-content">
-                <img class="" src="https://i.pinimg.com/originals/fb/1f/8a/fb1f8af3676977124d8844c0614b5afe.jpg" >
-                <div class="text-content">
-                  <p>tekst hier</p>
-                  <p>meer tekst hieer</p>
-                </div> 
-              </div>
+            <div class="col-12 col-sm-12">
+              <h3>COMPUTER PROGRAMMING</h3>
+              <p>
+                Bereid je maar voor om een expert te worden in front-end web development. Je wordt expert in JavaScript en leert werken met React, Node.js, TypeScript, PHP en SQL. Om je optimaal klaar te stomen voor een job als programmeur, krijg je diverse gastcolleges van experten uit het werkveld en werk je aan authentieke cases. 
+              </p>
+              <h3>APPLIED INFORMATION TECHNOLOGY</h3>
+              <p>
+                Je verdiept je in de geschiedenis en de werking van het internet en ontdekt de logica achter programmeren. Daarnaast duik je in de informatie rond hardware, software en netwerken. Later staan onder meer databases, security en blockchain op het programma.
+              </p>
+              <h3>UI/UX PROTOTYPING</h3>
+              <p>
+                In de vakken van deze programmalijn verdiep je je in de codeertalen HTML en CSS. Je leert werken met grafische software en gaat design thinking toepassen. Ook ga je aan de slag met CMS-systemen zoals WordPress.
+              </p>
+              <h3>BUSINESS & COMMUNICATION</h3>
+              <p>
+                Je ontdekt hoe bedrijven georganiseerd zijn, je leert handleidingen schrijven en je krijgt een dieper inzicht in marketing en bedrijfscommunicatie. Je leert pitchen voor klanten en samenwerken in team. In het laatste semester geven we je bovendien alle kennis mee die je nodig hebt om als zelfstandige IT’er aan de slag te gaan.
+              </p>
+              <h3>WORKPLACE LEARNING @WORK</h3>
+              <p>
+                Om je toekomstige job echt te leren kennen, moet je het werkveld intrekken. Dat doe je in de programmalijn @Work. In het eerste jaar bezoek je een aantal digital agencies en voer je opdrachten voor hen uit. Je presenteert het resultaat vervolgens voor een interne en externe jury. In je tweede jaar ga je 10 weken lang werkplekleren in een digitaal bedrijf. Zo doe je praktische kennis op en ervaar je hoe het voelt om echt in team te werken. Tijdens een individueel afsluitend project dat je op de werkvloer uitvoert, verdiep je je bovendien in een onderwerp naar keuze.
+              </p>
             </div>
-
+            <div class="col-12 col-sm-6">
+              <img src="../../app/_static/images/planing-deel1.jpg">
+            </div>
+            <div class="col-12 col-sm-6">
+              <img src="../../app/_static/images/planing-deel2.jpg">
+            </div>
           </div>
         </div>
         <section class="section">
@@ -49,7 +60,7 @@ class AboutPage {
                 <p>
                   Jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans adventure always cats go for world domination.
                 </p>
-                <button> druk mij</button>
+                <button href="${routes.CONTACT}" data-navigo> druk mij</button>
               </div>
               <div class="col-sm-7 col-12">
                 <img src="../../app/_static/images/colage-trans.png">
@@ -57,7 +68,6 @@ class AboutPage {
             </div>
           </div>
         </section>
-
       </div>
     `;
   }
