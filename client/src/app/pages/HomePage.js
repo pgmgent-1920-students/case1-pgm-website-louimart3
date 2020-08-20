@@ -9,13 +9,13 @@ class HomePage {
 
   async getDataCases() {
     const data = await BAAS.getCases();
-    return data.map(cases => `
+    const slisedData = data.slice(0, 3);
+    return slisedData.map(cases => `
       <div class="col-sm-6 col-12">
         <div class="single-content">
           <img class="" src="${cases.image}" >
           <div class="text-content">
             <h3>${cases.title}</h3>
-            <p>meer tekst hieer</p>
           </div> 
         </div>
       </div>
@@ -90,43 +90,17 @@ class HomePage {
         
         <div class="container ">
           <div class="row">
-            <div class="col-sm-6 col-12">
-              <div class="single-content">
-                <img class="" src="https://i.pinimg.com/originals/fb/1f/8a/fb1f8af3676977124d8844c0614b5afe.jpg" >
-                <div class="text-content">
-                  <p>tekst hier</p>
-                  <p>meer tekst hieer</p>
-                </div> 
-              </div>
-            </div>
+
 
             <div class="col-sm-6 col-12">
               <h3>Wij zitten niet stil!</h3>
+              
               <p>
                 Chase ball of string. Ignore the human until she needs to get up, then climb on her lap and sprawl check cat door for ambush 10 times before coming in do i like standing on litter cuz i sits when i have spaces, my cat buddies have no litter i live in luxury cat life ask for petting trip owner up in kitchen i want food run around the house at 4 in the morning so crash against wall but walk away like nothing happened. Find something else more interesting cat fur is the new black i like big cats and i can not lie.
               </p>
-              <button>Zie meer</button>
+              <a class="" href="#!${routes.CASES}" data-navigo>zie meer</a>
             </div>
-
-            <div class="col-sm-6 col-12">
-              <div class="single-content">
-                <img class="" src="https://i.pinimg.com/originals/fb/1f/8a/fb1f8af3676977124d8844c0614b5afe.jpg" >
-                <div class="text-content">
-                  <p>tekst hier</p>
-                  <p>meer tekst hieer</p>
-                </div> 
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-12">
-            <div class="single-content">
-              <img class="" src="https://i.pinimg.com/originals/fb/1f/8a/fb1f8af3676977124d8844c0614b5afe.jpg" >
-              <div class="text-content">
-                <p>tekst hier</p>
-                <p>meer tekst hieer</p>
-              </div> 
-            </div>
-          </div>
+            ${await this.getDataCases()}
           </div>
         </div>
 

@@ -15,6 +15,21 @@ class TeamPage {
       </div>
     `).join('');
   };
+
+  async getDataStudenten() {
+    const data = await BAAS.getStudenten();
+    return data.map(student => `
+      <div class="col-6 col-sm-4">
+        <div class="box">
+          <img class="" src="" alt="">
+          <div class="box-text">
+            <p>${student.name_first} ${student.name_last}</p>
+            <p>${student.quote_alt}</p>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  };
   
 
   async render() {
@@ -25,6 +40,10 @@ class TeamPage {
           <h3>Meet the team!</h3>
           <div class="row ">
             ${await this.getDataDocenten()}
+          </div>
+          <h3>Meet the students!</h3>
+          <div class="row ">
+          
           </div>
         </div>
       </div>

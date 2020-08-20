@@ -1,8 +1,6 @@
 const DOMAIN = 'https://pgmgent-1920-students.github.io/case1-pgm-website-baas-louimart3';
-//https://github.com/louimart3/BAAS_atwork2
-//https://pgmgent-1920-students.github.io/atwork2-case1-baas
-class BAAS {
 
+class BAAS {
   static getCases = async () => {
     const response = await fetch(`${DOMAIN}/data/cases/index.json`);
     const jsonData = await response.json();
@@ -12,7 +10,21 @@ class BAAS {
   static getCase = async (id) => {
     const response = await fetch(`${DOMAIN}/data/cases/index.json`);
     const jsonData = await response.json();
-    return jsonData.find(project => project.Id === id);
+    console.log(jsonData);
+    return jsonData.find(project => project.id === id);
+  };
+
+  static getNews = async () => {
+    const response = await fetch(`${DOMAIN}/data/cases/index.json`);
+    const jsonData = await response.json();
+    return jsonData;
+  };
+
+  static getNewsItem = async (id) => {
+    const response = await fetch(`${DOMAIN}/data/cases/index.json`);
+    const jsonData = await response.json();
+    console.log(jsonData);
+    return jsonData.find(project => project.id === id);
   };
 
 
@@ -20,6 +32,19 @@ class BAAS {
     const response = await fetch(`${DOMAIN}/data/docenten/index.json`);
     const jsonData = await response.json();
     return jsonData;
+  };
+
+  static getStudenten = async () => {
+    const response = await fetch(`${DOMAIN}/data/studenten/studenten.json`);
+    const jsonData = await response.json();
+    return jsonData;
+  };
+
+  static getCase = async (id) => {
+    const response = await fetch(`${DOMAIN}/data/cases/index.json`);
+    const jsonData = await response.json();
+    console.log(jsonData);
+    return jsonData.find(project => project.id === id);
   };
 
 }

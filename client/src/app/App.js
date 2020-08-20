@@ -1,6 +1,6 @@
 import { Router, routes } from './router';
 import {
-  HomePage, AboutPage, NotFoundPage, PostDetailPage, TeamPage, ContactPage, BlogPage, ThreePage
+  HomePage, AboutPage, NotFoundPage, CaseDetailPage, TeamPage, ContactPage, CasesPage, ThreePage, NewsPage
 } from './pages';
 import { Footer, Header } from './components';
 
@@ -12,12 +12,13 @@ class App {
     // Pages
     this.pageHome = new HomePage();
     this.pageAbout = new AboutPage();
-    this.pageBlog = new BlogPage();
+    this.pageCases = new CasesPage();
     this.pageContact = new ContactPage();
     this.pageNotFound = new NotFoundPage();
-    this.pagePostDetail = new PostDetailPage();    
+    this.pageCaseDetail = new CaseDetailPage();    
     this.pageTeam = new TeamPage();
     this.pageThree = new ThreePage();
+    this.pageNews = new NewsPage();
 
     // Components
     this.compHeader = new Header();
@@ -42,11 +43,13 @@ class App {
     this.router.addRoute(routes.LANDING, this.pageHome);
     this.router.addRoute(routes.HOME, this.pageHome);
     this.router.addRoute(routes.ABOUT, this.pageAbout);
-    this.router.addRoute(routes.BLOG, this.pageBlog);
-    this.router.addRoute(routes.POST_DETAIL, this.pagePostDetail);   
+    this.router.addRoute(routes.CASES, this.pageCases);
+    this.router.addRoute(routes.CASE_DETAIL, this.pageCaseDetail);   
     this.router.addRoute(routes.TEAM, this.pageTeam);
     this.router.addRoute(routes.CONTACT, this.pageContact);
     this.router.addRoute(routes.THREE, this.pageThree);
+    this.router.addRoute(routes.NEWS, this.pageNews);
+    this.router.addRoute(routes.NEWS_DETAIL, this.pageNews);
     this.router.setNotFoundPage(this.pageNotFound); 
     this.router.resolve();
 

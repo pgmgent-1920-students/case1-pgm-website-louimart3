@@ -1,12 +1,13 @@
 import { BAAS } from '../services';
 
-class PostDetailPage {
-  async getPost (id) {
-    const post = await BAAS.getPost(id);
+class NewsDetailPage {
+  async getNewsItem (id) {
+    const newsItem = await BAAS.getCase(id);
     return `
-      <div class="post">
-        <h1>${post.title}</h1>
-        <div>${post.synopsis}</div>
+    
+      <div class="case">
+        <h1>${newsItem.title}</h1>
+        <div>${newsItem.info}</div>
       </div>
     `;
   }
@@ -14,7 +15,7 @@ class PostDetailPage {
   async render (params) {
     return `
       <div class="page page--home">
-        ${await this.getPost(params.id)}
+        ${await this.getNewsItem(params.id)}
       </div>
     `;
   }
@@ -35,4 +36,4 @@ class PostDetailPage {
   }
 }
 
-export default PostDetailPage;
+export default NewsDetailPage;

@@ -1,19 +1,21 @@
 import AboutPage from './AboutPage';
-import BlogPage from './BlogPage';
+import CasesPage from './CasesPage';
 import ContactPage from './ContactPage';
 import HomePage from './HomePage';
 import NotFoundPage from './NotFoundPage';
-import PostDetailPage from './PostDetailPage';
+import CaseDetailPage from './CaseDetailPage';
 import TeamPage from './TeamPage';
 import ThreePage from './ThreePage';
+import NewsPage from './NewsPage';
 
 export {
   AboutPage,
-  BlogPage,
+  CasesPage,
   ContactPage,
   HomePage,
   NotFoundPage,
-  PostDetailPage,
+  CaseDetailPage,
   TeamPage,
   ThreePage,
+  NewsPage,
 };

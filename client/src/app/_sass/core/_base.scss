@@ -83,6 +83,24 @@ button {
   }
 }
 
+.page{
+  & a{
+    background-color: $color-orange;
+    border: 3px solid ;
+    color: $color-white;
+    font-size: 2rem;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0rem .5rem;
+
+    &:hover{
+      border: solid 3px $color-orange;
+      color: $color-orange;
+      background: rgba(($background-dark), 1);
+    }
+  }
+}
+
 .page--home , .page--about{
   .single-content{
     position: relative;
@@ -238,4 +256,8 @@ button {
       z-index: 5;
     }
   }
+}
+
+.page--caseDetail{
+
 }

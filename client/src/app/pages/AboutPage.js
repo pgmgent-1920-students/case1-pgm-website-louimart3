@@ -60,7 +60,7 @@ class AboutPage {
                 <p>
                   Jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans adventure always cats go for world domination.
                 </p>
-                <button href="${routes.CONTACT}" data-navigo> druk mij</button>
+                <a class="" href="#!${routes.TEAM}" data-navigo>druk mij</a>
               </div>
               <div class="col-sm-7 col-12">
                 <img src="../../app/_static/images/colage-trans.png">

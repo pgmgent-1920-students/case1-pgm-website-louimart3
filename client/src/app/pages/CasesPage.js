@@ -1,6 +1,7 @@
 import { BAAS } from '../services';
+import { routes } from '../router';
 
-class BlogPage {
+class CasesPage {
   async getDataCases() {
     const data = await BAAS.getCases();
     return data.map(cases => `
@@ -14,7 +15,7 @@ class BlogPage {
               <h3>${cases.title}</h3>
             </div>
             <div class="case-info">
-              <button>meer lezen</button>
+              <a class="" href="#!${routes.CASE_DETAIL.replace(":id",cases.id)}" data-navigo>meer lezen</a>
             </div> 
           </div>
         </div>
@@ -54,4 +55,4 @@ class BlogPage {
   }
 }
 
-export default BlogPage;
+export default CasesPage;
