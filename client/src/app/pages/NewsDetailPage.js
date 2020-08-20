@@ -1,14 +1,30 @@
 import { BAAS } from '../services';
 
+import {
+  routes
+} from '../router';
+
 class NewsDetailPage {
   async getNewsItem (id) {
-    const newsItem = await BAAS.getCase(id);
+    const newsItem = await BAAS.getNewsItem(id);
     return `
-    
-      <div class="case">
-        <h1>${newsItem.title}</h1>
-        <div>${newsItem.info}</div>
+    <div class="page page--newsDetail">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-12">
+            <h1>${newsItem.title}</h1>
+            <p>${newsItem.synopsis}</p>
+            <a class="" href="#!${routes.NEWS}" data-navigo>ga terug</a>
+          </div>
+          <div class="col-sm-8 col-12">
+            <img class="" src="${newsItem.thumbnailUrl}" alt="">
+          </div>
+          <div class="col-sm-12">
+            <p>${newsItem.body}</p>
+          </div>
+        </div>
       </div>
+    </div>
     `;
   }
 

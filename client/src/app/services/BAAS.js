@@ -15,13 +15,13 @@ class BAAS {
   };
 
   static getNews = async () => {
-    const response = await fetch(`${DOMAIN}/data/cases/index.json`);
+    const response = await fetch(`${DOMAIN}/data/news/index.json`);
     const jsonData = await response.json();
     return jsonData;
   };
 
   static getNewsItem = async (id) => {
-    const response = await fetch(`${DOMAIN}/data/cases/index.json`);
+    const response = await fetch(`${DOMAIN}/data/news/index.json`);
     const jsonData = await response.json();
     console.log(jsonData);
     return jsonData.find(project => project.id === id);
@@ -38,13 +38,6 @@ class BAAS {
     const response = await fetch(`${DOMAIN}/data/studenten/studenten.json`);
     const jsonData = await response.json();
     return jsonData;
-  };
-
-  static getCase = async (id) => {
-    const response = await fetch(`${DOMAIN}/data/cases/index.json`);
-    const jsonData = await response.json();
-    console.log(jsonData);
-    return jsonData.find(project => project.id === id);
   };
 
 }

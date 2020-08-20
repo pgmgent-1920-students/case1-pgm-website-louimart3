@@ -33,7 +33,7 @@ class ContactPage {
               <input>
               <h2 class="contact_value">uw vraag :</h2>
               <textarea></textarea>
-              <button>vertuur</button>
+              <button>verstuur</button>
             </div>
           </div>
         </div>

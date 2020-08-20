@@ -167,6 +167,8 @@ button {
   .box {
     overflow: hidden;
     position: relative;
+    max-height: 332px;
+    min-height: 331px;
 
     &:hover{
       & .box-text{
@@ -211,7 +213,7 @@ button {
   }
 }
 
-.page--blog {
+.page--cases, .page--news {
   .box{
     position: relative;
     z-index: 1;

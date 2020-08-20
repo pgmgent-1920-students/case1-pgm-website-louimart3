@@ -25,8 +25,6 @@ class CaseDetailPage {
         </div>
       </div>
     </div>
-
-
     `;
   }
 

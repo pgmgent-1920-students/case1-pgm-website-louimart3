@@ -7,6 +7,7 @@ import CaseDetailPage from './CaseDetailPage';
 import TeamPage from './TeamPage';
 import ThreePage from './ThreePage';
 import NewsPage from './NewsPage';
+import NewsDetailPage from './NewsDetailPage';
 
 export {
   AboutPage,
@@ -18,4 +19,5 @@ export {
   TeamPage,
   ThreePage,
   NewsPage,
+  NewsDetailPage,
 };

@@ -25,7 +25,7 @@ class CasesPage {
 
   async render () {
     return `
-      <div class="page page--blog">
+      <div class="page page--cases">
         <div class="container">
           <h1>Cases</h1>
           <div class="row ">

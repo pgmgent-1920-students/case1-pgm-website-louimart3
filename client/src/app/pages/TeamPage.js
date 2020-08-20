@@ -1,4 +1,7 @@
 import { BAAS } from '../services';
+import {
+  routes
+} from '../router';
 
 class TeamPage {
   async getDataDocenten() {
@@ -18,13 +21,13 @@ class TeamPage {
 
   async getDataStudenten() {
     const data = await BAAS.getStudenten();
-    return data.map(student => `
+    return data.records.map(student => `
       <div class="col-6 col-sm-4">
         <div class="box">
-          <img class="" src="" alt="">
+          <img class="" src="${student.fields.url}" alt="">
           <div class="box-text">
-            <p>${student.name_first} ${student.name_last}</p>
-            <p>${student.quote_alt}</p>
+            <p>${student.fields.name_first} ${student.fields.name_last}</p>
+            <p>${student.fields.quote_alt}</p>
           </div>
         </div>
       </div>
@@ -43,7 +46,7 @@ class TeamPage {
           </div>
           <h3>Meet the students!</h3>
           <div class="row ">
-          
+            ${await this.getDataStudenten()}
           </div>
         </div>
       </div>
