@@ -28,6 +28,7 @@ class TeamPage {
           <div class="box-text">
             <p>${student.fields.name_first} ${student.fields.name_last}</p>
             <p>${student.fields.quote_alt}</p>
+            <a>meer</a>
           </div>
         </div>
       </div>

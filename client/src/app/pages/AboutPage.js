@@ -1,4 +1,6 @@
 import { routes } from '../router';
+import deel1 from '../../app/_static/images/planing-deel1.jpg';
+import deel2 from'../../app/_static/images/planing-deel2.jpg';
 
 class AboutPage {
   constructor () {
@@ -11,7 +13,7 @@ class AboutPage {
           <div class="row">
             <div class="col-12 col-sm-7">
               <h1>About</h1>
-              <p>
+              <p> 
                 Meow to be let out paw your face to wake you up in the morning so i shall purr myself to sleep. Warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats i’m so hungry i’m so hungry but ew not for that and have secret plans, if human is on laptop sit on the keyboard stare at ceiling hey! you there, with the hands. When owners are asleep, cry for no apparent reason where is it? i saw that bird i need to bring it home to mommy squirrel! . When owners are asleep, cry for no apparent reason roll on the floor purring your whiskers off. Love me! stare at owner accusingly then wink.
               </p>
             </div>
@@ -45,10 +47,10 @@ class AboutPage {
               </p>
             </div>
             <div class="col-12 col-sm-6">
-              <img src="../../app/_static/images/planing-deel1.jpg">
+              <img src="${deel1}">
             </div>
             <div class="col-12 col-sm-6">
-              <img src="../../app/_static/images/planing-deel2.jpg">
+              <img src="${deel2}">
             </div>
           </div>
         </div>
