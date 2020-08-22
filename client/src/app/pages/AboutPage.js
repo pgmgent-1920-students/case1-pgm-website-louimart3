@@ -1,6 +1,6 @@
 import { routes } from '../router';
-import deel1 from '../../app/_static/images/planing-deel1.jpg';
-import deel2 from'../../app/_static/images/planing-deel2.jpg';
+import deel1 from '../_static/images/planing-deel1.jpg';
+import deel2 from'../_static/images/planing-deel2.jpg';
 
 class AboutPage {
   constructor () {
