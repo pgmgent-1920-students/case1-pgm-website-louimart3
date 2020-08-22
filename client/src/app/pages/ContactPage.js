@@ -25,15 +25,13 @@ class ContactPage {
               </p>
             </div>
             <div class="col-sm-6">
-              <h2 class="contact_value">naam :</h2>
-              <input>
-              <h2 class="contact_value">Achternaam :</h2>
-              <input>
-              <h2 class="contact_value">e-mail adres :</h2>
-              <input>
-              <h2 class="contact_value">uw vraag :</h2>
-              <textarea></textarea>
-              <button>verstuur</button>
+              <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+              </form> 
             </div>
           </div>
         </div>

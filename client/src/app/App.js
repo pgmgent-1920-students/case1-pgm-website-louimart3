@@ -1,8 +1,10 @@
 import { Router, routes } from './router';
 import {
-  HomePage, AboutPage, NotFoundPage, CaseDetailPage, TeamPage, ContactPage, CasesPage, ThreePage, NewsPage
+  HomePage, AboutPage, NotFoundPage, CaseDetailPage, TeamPage, ContactPage, CasesPage, ThreePage, NewsPage ,
 } from './pages';
 import { Footer, Header } from './components';
+import WorkPlacePage from './pages/WorkPLacePage';
+import studentDetailPage from './pages/StudentDetailPage';
 
 class App {
   constructor (container) {
@@ -19,6 +21,8 @@ class App {
     this.pageTeam = new TeamPage();
     this.pageThree = new ThreePage();
     this.pageNews = new NewsPage();
+    this.pageWorkPlace = new WorkPlacePage();
+    this.pageStudentDetail = new studentDetailPage();
 
     // Components
     this.compHeader = new Header();
@@ -50,6 +54,8 @@ class App {
     this.router.addRoute(routes.THREE, this.pageThree);
     this.router.addRoute(routes.NEWS, this.pageNews);
     this.router.addRoute(routes.NEWS_DETAIL, this.pageNews);
+    this.router.addRoute(routes.WORKPLACE, this.pageWorkPlace); 
+    this.router.addRoute(routes.TEAM_DETAIL, this.pageStudentDetail);
     this.router.setNotFoundPage(this.pageNotFound); 
     this.router.resolve();
 

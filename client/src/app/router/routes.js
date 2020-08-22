@@ -8,3 +8,5 @@ export const CONTACT = '/contact';
 export const THREE = '/three';
 export const NEWS = '/news';
 export const NEWS_DETAIL = '/news/:id';
+export const WORKPLACE = '/werkplekleren';
+export const TEAM_DETAIL = '/team/:id';

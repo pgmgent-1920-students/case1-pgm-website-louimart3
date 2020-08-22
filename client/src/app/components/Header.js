@@ -14,6 +14,7 @@ class Header {
                 <ul class="nav__list">
                   <li class="nav__item"><a href="${routes.HOME}" data-navigo>Home</a></li>
                   <li class="nav__item"><a href="${routes.ABOUT}" data-navigo>About</a></li>
+                  <li class="nav__item"><a href="${routes.WORKPLACE}" data-navigo>Werkplekleren</a></li>
                   <li class="nav__item"><a href="${routes.CASES}" data-navigo>Cases</a></li>
                   <li class="nav__item"><a href="${routes.NEWS}" data-navigo>News</a></li>
                   <li class="nav__item"><a href="${routes.TEAM}" data-navigo>Team</a></li> 
@@ -29,12 +30,12 @@ class Header {
   }
 
   async afterRender () {
-    // Connect the listeners
-    const btnHamburger = document.querySelector('.btn-hamburger');
-    btnHamburger.addEventListener('click', (ev) => {
-      console.log(ev);
-    });
-    return this;
+    // // Connect the listeners
+    // const btnHamburger = document.querySelector('.btn-hamburger');
+    // btnHamburger.addEventListener('click', (ev) => {
+    //   console.log(ev);
+    // });
+    // return this;
   }
 
   updateActiveLink (route) {

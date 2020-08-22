@@ -1,5 +1,5 @@
 import { routes } from '../router';
-import deel1 from '../_static/images/planing-deel3.jpg';
+import deel1 from '../_static/images/planing-deel1.jpg';
 import deel2 from'../_static/images/planing-deel2.jpg';
 
 class AboutPage {

@@ -8,8 +8,8 @@ class ThreePage {
   async render () {
     return `
       <div class="page page--three">
-        <h1>Three<h1>
-        <div class="three-container"></div>
+          <h1>Three<h1>
+          <div class="three-container"></div>
       </div>
     `;
   }

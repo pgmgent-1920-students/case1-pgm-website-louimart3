@@ -28,7 +28,7 @@ class TeamPage {
           <div class="box-text">
             <p>${student.fields.name_first} ${student.fields.name_last}</p>
             <p>${student.fields.quote_alt}</p>
-            <a>meer</a>
+            <a href="#!${routes.TEAM_DETAIL.replace(":id", student.id)}" data-navigo>meer</a>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ class TeamPage {
   async render() {
     return `
       <div class="page page--team">
-        <div class="container">
+        <div class="container"> 
           <h1>Team</h1>
           <h3>Meet the team!</h3>
           <div class="row ">
@@ -47,7 +47,9 @@ class TeamPage {
           </div>
           <h3>Meet the students!</h3>
           <div class="row ">
+         
             ${await this.getDataStudenten()}
+        
           </div>
         </div>
       </div>

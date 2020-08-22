@@ -40,6 +40,13 @@ class BAAS {
     return jsonData;
   };
 
+  static getStudents = async (id) => {
+    const response = await fetch(`${DOMAIN}/data/studenten/studenten.json`);
+    const jsonData = await response.json();
+    console.log(jsonData);
+    return jsonData.records.find(project => project.id === id);
+  };
+
 }
 
 export default BAAS;
