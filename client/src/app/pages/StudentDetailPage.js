@@ -6,10 +6,21 @@ import {
 
 class studentDetailPage {
   async getStudents(id) {
-    const caset = await BAAS.getStudents(id);
+    const student = await BAAS.getStudents(id);
     return `
-    <div>
-    ziojefzoij
+    <div class="page page--studentDetail">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-12">
+          <h1>${student.fields.name_first} ${student.fields.name_last}</h1>
+          <p> ${student.fields.about}</p>
+          <a class="" href="#!${routes.TEAM}" data-navigo>ga terug</a>
+        </div>
+        <div class="student_url col-sm-6 col-12">
+          <img class="" src="${student.fields.url}" alt="">
+        </div>
+      </div>
+    </div>
   </div>
     `;
   }

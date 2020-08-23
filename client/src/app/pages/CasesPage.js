@@ -30,7 +30,7 @@ class CasesPage {
         <div class="container">
           <h1>Cases</h1>
 
-      <div class="filterCase">
+      <div class="filter filterCase">
         <p>All</p>
         <p>@work-1</p>
         <p>Web-design</p>

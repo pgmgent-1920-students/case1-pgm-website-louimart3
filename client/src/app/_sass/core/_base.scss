@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   list-style: none;
@@ -156,9 +157,29 @@ button {
     width: 100%;
     color: $color-white;
     transition-duration: 0.5s;
+    margin-top: 0px;
 
     &:focus{
       background-color: $background-dark;
+      box-shadow: 2px 2px 5px 0px $color-orange;
+    }
+  }
+
+  & label {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+  }
+
+  & .button{
+    margin-top: 2rem;
+    color: $color-white;
+    border: solid 3px $color-white;
+    background-color: $color-orange;
+
+    &:hover {
+      color: $color-orange;
+      border: solid 3px $color-orange;
+      background-color: $background-dark; 
     }
   }
 }
@@ -231,7 +252,7 @@ button {
         }
       }
       .box-text{
-        height: 150px;
+        height: 180px;
         background:rgba(($background-dark), 0.9);
       }
     }
@@ -260,6 +281,22 @@ button {
   }
 }
 
-.page--caseDetail{
+.filter{
+  display: flex;
+  justify-content: space-around;
+  & p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: 0.3s;
+    border-bottom: solid 2px $background-light;
+
+    &:hover{
+      color: $color-orange;
+      border-bottom: solid 2px $color-orange;
+    }
+  }
+}
+
+.allInfo{
 
 }

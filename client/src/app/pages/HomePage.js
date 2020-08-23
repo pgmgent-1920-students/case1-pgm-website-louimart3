@@ -9,7 +9,7 @@ class HomePage {
 
   async getDataCases() {
     const data = await BAAS.getCases();
-    const slisedData = data.slice(0, 3);
+    const slisedData = data.slice(2, 5);
     return slisedData.map(cases => `
       <div class="col-sm-6 col-12">
         <div class="single-content">
@@ -61,10 +61,10 @@ class HomePage {
               <i class="fab fa-html5"></i> Html
               </p>
               <p class="learn-item">
-                <i class="fab fa-css3-alt"></i> css
+                <i class="fab fa-css3-alt"></i> Css
               </p>
               <p class="learn-item">
-                <i class="fab fa-js-square"></i> js
+                <i class="fab fa-js-square"></i> Js
               </p>
             </div>
           </div>
@@ -89,12 +89,9 @@ class HomePage {
         </div>
         
         <div class="container ">
-          <div class="row">
-
-
+          <div class="row align-items-center">
             <div class="col-sm-6 col-12">
               <h3>Wij zitten niet stil!</h3>
-              
               <p>
                 Chase ball of string. Ignore the human until she needs to get up, then climb on her lap and sprawl check cat door for ambush 10 times before coming in do i like standing on litter cuz i sits when i have spaces, my cat buddies have no litter i live in luxury cat life ask for petting trip owner up in kitchen i want food run around the house at 4 in the morning so crash against wall but walk away like nothing happened. Find something else more interesting cat fur is the new black i like big cats and i can not lie.
               </p>

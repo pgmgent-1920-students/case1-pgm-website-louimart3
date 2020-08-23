@@ -25,22 +25,28 @@ class ContactPage {
               </p>
             </div>
             <div class="col-sm-6">
-              <form action="/action_page.php">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John" required><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                <input type="submit" value="Submit">
+              <form>
+                <label for="fname">naam:</label>
+                <input type="text" id="fname" name="fname" value="" required>
+                <label for="lname">voornaam:</label>
+                <input type="text" id="lname" name="lname" value="" required>
+                <label for="fname">e-mail adres:</label>
+                <input type="email" id="fname" name="fname" value="" required>
+                <label for="fname">uw vraag:</label>
+                <textarea style="max-width:100%"; name="message" rows="3"  required >
+                </textarea> 
+                <input class="button" type="submit" value="verstuur" >
               </form> 
             </div>
           </div>
         </div>
       </div>
     `;
+    
   }
 
   async afterRender () {
-    // afterRender all components on the page
+
     
     // Connect the listeners
     return this;

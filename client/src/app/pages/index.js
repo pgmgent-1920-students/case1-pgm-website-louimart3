@@ -5,7 +5,6 @@ import HomePage from './HomePage';
 import NotFoundPage from './NotFoundPage';
 import CaseDetailPage from './CaseDetailPage';
 import TeamPage from './TeamPage';
-import ThreePage from './ThreePage';
 import NewsPage from './NewsPage';
 import NewsDetailPage from './NewsDetailPage';
 
@@ -17,7 +16,6 @@ export {
   NotFoundPage,
   CaseDetailPage,
   TeamPage,
-  ThreePage,
   NewsPage,
   NewsDetailPage,
 };

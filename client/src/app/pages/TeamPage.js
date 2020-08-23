@@ -39,22 +39,20 @@ class TeamPage {
   async render() {
     return `
       <div class="page page--team">
-      <div class="filter container">
-      <p>Docenten</p>
-      <p>Team</p>
-    </div>
+        <div class="filter container">
+          <p>Docenten</p>
+          <p>Studenten</p>
+        </div>
         <div class="container allInfo">
-
           <h1>Team</h1>
           <h3>Meet the team!</h3>
+          
           <div class="row ">
             ${await this.getDataDocenten()}
           </div>
           <h3>Meet the students!</h3>
           <div class="row ">
-         
             ${await this.getDataStudenten()}
-        
           </div>
         </div>
       </div>
@@ -69,18 +67,17 @@ class TeamPage {
 
     filter[0].addEventListener('click', () => {
       info.innerHTML = ' ';
-    
-    return dataDocenten.map(docent => info.innerHTML += `
-      <div class="col-6 col-sm-4">
-        <div class="box">
-          <img class="" src="${docent.img}" alt="">
-          <div class="box-text">
-            <p>${docent.firstName} ${docent.lastName}</p>
-            <p>${docent.mainFunction}</p>
+      return dataDocenten.map(docent => info.innerHTML += `
+        <div class="col-6 col-sm-4">
+          <div class="box">
+            <img class="" src="${docent.img}" alt="">
+            <div class="box-text">
+              <p>${docent.firstName} ${docent.lastName}</p>
+              <p>${docent.mainFunction}</p>
+            </div>
           </div>
         </div>
-      </div>
-    `).join('');
+      `).join('');
     });
 
     filter[1].addEventListener('click', () => {
