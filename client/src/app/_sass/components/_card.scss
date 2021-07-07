@@ -1,0 +1,41 @@
+.card {
+  &__title {
+    font-size: 1.32rem;
+  }
+
+  &__sub-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__picture {
+    display: block;
+    overflow: hidden;
+    height: 312px;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__readmore {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-blue;
+    transition: all 286ms ease-in-out 0s;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  @include generateCardColor('purple', $color-purple);
+  @include generateCardColor('blue', $color-blue);
+  @include generateCardColor('green', $color-green);
+  @include generateCardColor('red', $color-red);
+  @include generateCardColor('orange', $color-orange);
+}

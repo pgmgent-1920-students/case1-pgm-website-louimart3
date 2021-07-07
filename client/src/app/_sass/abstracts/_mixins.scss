@@ -1,0 +1,35 @@
+@mixin generateSectionColor($colorName, $color-variable) {  
+  &--#{$colorName} {
+    & .section {
+      &__title {
+        & mark {
+          color: $color-variable;
+        }
+      }
+  
+      &__intro {
+        & strong {
+          color: $color-variable;
+        }
+      }
+    }    
+  }
+}
+
+@mixin generateCardColor($colorName, $color-variable) {  
+  &--#{$colorName} {
+    & .card {
+      &__sub-title {
+        color: $color-variable;
+      }
+
+      &__readmore {
+        color: $color-variable;
+    
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }    
+  }
+}
